@@ -218,11 +218,11 @@ node seed.js
 Creates an admin account plus a catalog of sample medicines across all categories.
 
 ```
-Email:    admin@pharmacy.com
-Password: admin123
+Email: PRIVATE
+Password: PRIVATE
 ```
 
-> ⚠️ Change these credentials before deploying anywhere public.
+
 
 ### 4 · Frontend
 
@@ -246,7 +246,6 @@ npm run dev              # http://localhost:5173
 
 ## 📸 Screenshots
 
-> Drop your images into a `screenshots/` folder and the table below renders automatically.
 
 | Storefront | Medicine Detail |
 |---|---|
