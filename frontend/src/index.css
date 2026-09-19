@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-brand-50 text-ink font-body transition-colors duration-300;
+}
+
+.dark body {
+  @apply bg-slate-900 text-slate-100;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display;
+}
+
+/* Shimmer skeleton loader */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background-color: theme("colors.brand.100");
+}
+.dark .skeleton {
+  background-color: theme("colors.slate.800");
+}
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+  animation: shimmer 1.5s infinite;
+}
+.dark .skeleton::after {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+}
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
+
+/* Hide the default browser scrollbar — scrolling still works, it's just not shown */
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* old Edge/IE */
+}
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, new Edge */
+}
