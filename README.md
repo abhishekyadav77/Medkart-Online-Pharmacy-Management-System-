@@ -13,7 +13,7 @@
 [![JWT](https://img.shields.io/badge/Auth-JWT-FF6B00?style=for-the-badge&logo=jsonwebtokens&logoColor=white)](https://jwt.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-[Live Demo](#) · [Report Bug](../../issues) · [Request Feature](../../issues)
+[Live Demo]([#](https://medkart-online-pharmacy-management.vercel.app/)) · [Report Bug](../../issues) · [Request Feature](../../issues)
 
 </div>
 
